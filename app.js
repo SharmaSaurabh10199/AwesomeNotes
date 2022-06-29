@@ -93,5 +93,11 @@ search.addEventListener('input',function(){
             elem.style.display='none';
         }
     })
-    
+})
+
+// to clear all the notes;
+document.getElementById('clearBtn').addEventListener('click',function(){
+    console.log('trigred')
+    localStorage.clear();
+    showNotes();
 })
