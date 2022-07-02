@@ -1,9 +1,9 @@
-console.log('my awesome notes');
+// console.log('my awesome notes');
 // if user adds a npote, add it to the local storage
 let addBtn= document.getElementById('addBtn');
 showNotes();
 addBtn.addEventListener('click',function(e){
-    console.log('clicked')
+    // console.log('clicked')
     let addText= document.getElementById('addText');
     // console.log(addText.value)
     let notes= localStorage.getItem('notes');
@@ -15,7 +15,7 @@ addBtn.addEventListener('click',function(e){
         // retrieve the old notes
         notesObj= JSON.parse(notes);
     }
-    console.log(notesObj);
+    // console.log(notesObj);
     // add the new note
     notesObj.push(addText.value);
     // save them back in new note
@@ -75,7 +75,7 @@ function Delete(index){
 
 // functionality to search for the notes:
 let search= document.getElementById('searchText');
-console.log(search)
+// console.log(search)
 search.addEventListener('input',function(){
     // console.log('input fired');
     let inpVal= search.value;
@@ -97,7 +97,13 @@ search.addEventListener('input',function(){
 
 // to clear all the notes;
 document.getElementById('clearBtn').addEventListener('click',function(){
-    console.log('trigred')
+    // console.log('trigred')
+    
+    // confirm before deleting the note.
+    let askAgain= confirm('Are you sure you want to delete all notes?');
+    if(askAgain){
     localStorage.clear();
     showNotes();
+    }
+    
 })
