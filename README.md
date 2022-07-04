@@ -15,4 +15,7 @@ I have made a notes taking website with help of js mainly and a bit of bootstrap
     This feature enables user to search for a note, behind the scenes the program iterates through all the notes, checks if the entered keys matches any note, if it does     not, it makes the display none for all the notes which does not have that keyword, in this way the notes being displayed are just the notes which have the entered 
     keyword.
     
+ 5) hosted link: 
+    https://astonishing-cobbler-5d6cee.netlify.app
+    
  I will adding more funtionalties as i learn more (: .   
